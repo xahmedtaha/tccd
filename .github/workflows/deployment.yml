@@ -81,11 +81,13 @@ jobs:
           options: '--verbose'
 
       - name: Executing Remote ssh commands
-        uses: appleboy/ssh-action@v1.0.3
+        uses: D3rHase/ssh-command-action@latest
         with:
-          host: "s10.serv00.com"
-          username: xahmedtaha
-          key: "-----BEGIN RSA PRIVATE KEY-----
+          host: s10.serv00.com
+          port: 22
+          user: xahmedtaha
+          private_key: "
+          -----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAwWCfOsXKUMgMss8iu190bSYysS34jaenLHM+Y1ciqQGtAgUv
 KjEj1a3cwpPCUaF77UxdlY9fr3ZOITLZvVN7sgxEHR1uex164Kxnm1m9Yj/0+TX9
 Q5za0CRd4DBTjy8JdKbw9uAAdWEY9476VTdYNQbcs1UbVIXGtmV2mQpgyOM9wpEL
@@ -111,9 +113,9 @@ Sj3ZlvuRt00ApVUmGrFvc3q1yk/AVmuwRNp8HVoebAj/tENGX1y9h1AxKu1tWJxm
 c+3xAoGAdk2nsJ9WCIyeDIN06bgO+OpHbMG4JWuh9zpwkeUpes7ewH03nW5Q88sd
 yZoVuuivCnP+wfWdTkgqGiqKcn5LGKyNwK3LrIIFHkEGMJnyUy3hAF9+og2+NS2u
 sUcHLZv89ieSAjsAZNTij8BfCTaZVVygdKO0d4mUnFQCZNVZnGA=
------END RSA PRIVATE KEY-----"
-          port: 22
-          script: |
+-----END RSA PRIVATE KEY-----
+          "
+          command: |
             cd domains/xahmedtaha.serv00.net/
             composer update
             npm update
