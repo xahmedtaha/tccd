@@ -28,8 +28,8 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
-    - name: Host App
-      run: php artisan serve
+    - name: Run Laravel Server
+      run: php artisan serve > /dev/null 2>&1 &
     - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
       env:
         DB_CONNECTION: sqlite
