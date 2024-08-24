@@ -40,7 +40,7 @@ jobs:
           # Mirror command options
           localDir: '.'
           reverse: true
-          remoteDir: '/domains/xahmedtaha.serv00.net/'
+          remoteDir: './domains/xahmedtaha.serv00.net/'
           ignoreFile: '.lftp_ignore'
           options: '--verbose' 
      
