@@ -48,8 +48,8 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         with:
          host: s10.serv00.com
-         username: ${{secrets.SSH_USERNAME}}
-         password: ${{secrets.SSH_PRIVATE_KEY}}
+         username: xahmedtaha
+         password: iM6G(pBC5&5nGQ@1pzkj
          port: 22
          script:  |
               cd domains/xahmedtaha.serv00.net/
