@@ -86,7 +86,8 @@ jobs:
           host: s10.serv00.com
           username: xahmedtaha
           password: iM6G(pBC5&5nGQ@1pzkj
-          key: iM6G(pBC5&5nGQ@1pzkj
+          debug: true
+          use_insecure_cipher: true
           port: 22
           script: |
             cd domains/xahmedtaha.serv00.net/
