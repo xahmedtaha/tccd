@@ -45,7 +45,7 @@ jobs:
           options: '--verbose' 
      
       - name: Executing Remote ssh commands
-        uses: appleboy/ssh-action@v1.0.0
+        uses: appleboy/ssh-action@v1.0.3
         with:
          host: s10.serv00.com
          username: xahmedtaha
