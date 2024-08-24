@@ -11,6 +11,11 @@ The purpose of this website is a demo to show potential features and capabilitie
 - A GitHub action for potential deployment automation.
 - More to be added...
 
+### Tech Stack
+- PHP & Laravel (Backend Framework)
+- Filament & Livewire (Admin Panel)
+- Tailwind CSS (Styling) & Vue.js (Reactivity/Components Framework) & InertiaJS (Server Routing Library)
+
 ### Setup
 - Install PHP 8.3
 - Clone the repository.
