@@ -51,6 +51,8 @@ These tests check the most basic features of the app as an example and should be
 
 ### Deployment
 
-This app should be deployed to a VPS with SSH access. Unfortunately, the demo server that I'm using doesn't have SSH, so I can't show you a real CI/CD integration with GitHub Actions.
-However, I added a GitHub Action that runs the PHPUnit tests on each push as an alternative example at `.github/workflows/testing.yml`.
+This app should be deployed to a VPS with SSH access. I added a GitHub Action that runs the PHPUnit tests and then deploys the app files to a server through SFTP
+
+The action is in `.github/workflows/deployment.yml`.
+
 Check the actions tab!
