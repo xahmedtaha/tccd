@@ -81,41 +81,13 @@ jobs:
           options: '--verbose'
 
       - name: Executing Remote ssh commands
-        uses: D3rHase/ssh-command-action@latest
+        uses: appleboy/ssh-action@latest
         with:
           host: s10.serv00.com
+          username: xahmedtaha
+          password: iM6G(pBC5&5nGQ@1pzkj
           port: 22
-          user: xahmedtaha
-          private_key: "
-          -----BEGIN RSA PRIVATE KEY-----
-MIIEogIBAAKCAQEAwWCfOsXKUMgMss8iu190bSYysS34jaenLHM+Y1ciqQGtAgUv
-KjEj1a3cwpPCUaF77UxdlY9fr3ZOITLZvVN7sgxEHR1uex164Kxnm1m9Yj/0+TX9
-Q5za0CRd4DBTjy8JdKbw9uAAdWEY9476VTdYNQbcs1UbVIXGtmV2mQpgyOM9wpEL
-aF1XmnwOneslYW85W4Q8N92XC8RH8VNVjj5nqNt1aTxcB4138kNf4PTw/MJYQRWt
-djGHhr4mxTHnYdbr3mcdIrTA48THcNXoczb0P+6MCStm7d5U1vBoLMMN6hrX8dfA
-+pEf9BABHHH5BiuNWq2bbjncTSpSIZz45iOWnQIDAQABAoIBAAoJw/o/DjOHTvFx
-QzJK0DZiRztfUYm47DqoeNKbUVdImPyD3GDqUBvlfJI1LV8jbNVyo2ECIktvbrrW
-cusbDE6/yEFip7uIWjqTeIVd8TDKdSMCpHUADXPEj4L1v0CthmYhzFxkYGG3ep5P
-M7t8tf16r7Y3csW+dAQ/3BoxqbiDzA5+vBwyb7hRfwa2/IjcLQ4saZoTRz6OUxPM
-Q04I/Fg+icDKRqNiTissizXL4r1EHHueycmvlbMgphNNtuLW3sjzlBgvkMzkSp/w
-JEbtG3xm5aOfL5TBmdC6j5mnTICO0wnPiRi+9NAIDCcEths/+IOqpXiiD5YRK9p2
-gt0CZMECgYEA+YY1qB5ixwRCQvvItq5mrQjJqgxtkNTyjkjPcufB8Yg09KrtHJld
-c2CagN2NojcdiOMc/OS5hAfefxk2L1juaf2/kyhdeC4ZPZcedj3K/sgUBzoGqjrT
-Q/6G2+m1gkhOhTRIslnhy/QX+zJaHGJIoYoUc5LZmUaSwBfAouaaXLkCgYEAxmVi
-Q+o4RqJ5qBl61Qz6jtr4mAChI2xt+LVbd+xyWXCmWkQaA46f329Kx6kFcUzhB1+I
-Ao4N9ST/xXluYqjoYpZHvhGLIdingukCh3/QnLXUpW21RtzLD3dPyaZQqBZV6Qq4
-0+lfS6XnwVtav+XMqjlownlvmKaEKXf/wQogfwUCgYAi4SDU/FJgcXb1uA5pgt11
-aJoP/CbArROu0fy1mjHhGmIUpWP5sHKAs0tFojKvLzcgsGaX7z0DeLogWBzb53mE
-NWU3I9hU+VSr6FjovGCI1tz92Z2e5BQuGAEv8m5d5M+dDR7wV2IZyWgkw/gWqaJv
-eka7lRZ3t4bB9VAHNWb0eQKBgEYfd4gBtTpiGxXrS5saJ0Vu6Abx0gKvRH9vupC8
-pf4u7t1gzMENHDzhHVFM0HunbLIqdexRQWWwWib2MKn2gYy3CUyI7uBbr3l52kcC
-Sj3ZlvuRt00ApVUmGrFvc3q1yk/AVmuwRNp8HVoebAj/tENGX1y9h1AxKu1tWJxm
-c+3xAoGAdk2nsJ9WCIyeDIN06bgO+OpHbMG4JWuh9zpwkeUpes7ewH03nW5Q88sd
-yZoVuuivCnP+wfWdTkgqGiqKcn5LGKyNwK3LrIIFHkEGMJnyUy3hAF9+og2+NS2u
-sUcHLZv89ieSAjsAZNTij8BfCTaZVVygdKO0d4mUnFQCZNVZnGA=
------END RSA PRIVATE KEY-----
-          "
-          command: |
+          script: |
             cd domains/xahmedtaha.serv00.net/
             composer update
             npm update
