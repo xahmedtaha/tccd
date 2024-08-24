@@ -47,5 +47,4 @@ These tests check the most basic features of the app as an example and should be
 ### Deployment
 
 This app should be deployed to a VPS with SSH access. Unfortunately, the demo server that I'm using doesn't have SSH, so I can't show you a real CI/CD integration with GitHub Actions.
-However, I wrote the script that should hypothetically work the same way with an SSH enabled server.
-Just update the github action config with the correct credentials and you should be good to go!
+However, I added a GitHub Action that runs the PHPUnit tests on each push as an alternative example.
