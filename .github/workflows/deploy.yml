@@ -32,8 +32,8 @@ jobs:
           # SFTP credentials
           host: s10.serv00.com
           port: 22
-          user: ${{secrets.SSH_USERNAME}}
-          pass: ${{secrets.SSH_PRIVATE_KEY}}
+          user: xahmedtaha
+          pass: iM6G(pBC5&5nGQ@1pzkj
           # lftp settings
           onlyNewer: true
           settings: 'sftp:auto-confirm=yes'
