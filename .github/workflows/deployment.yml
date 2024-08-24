@@ -80,17 +80,17 @@ jobs:
           ignoreFile: '.lftp_ignore'
           options: '--verbose'
 
-      - name: Executing Remote ssh commands
-        uses: appleboy/ssh-action@master
-        with:
-          host: s10.serv00.com
-          username: xahmedtaha
-          password: iM6G(pBC5&5nGQ@1pzkj
-          port: 22
-          script: |
-            cd domains/xahmedtaha.serv00.net/
-            composer update
-            npm update
-            npm run build
-            php artisan migrate
-            cp -a public/. public_html/
+#      - name: Executing Remote ssh commands
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: s10.serv00.com
+#          username: xahmedtaha
+#          password: iM6G(pBC5&5nGQ@1pzkj
+#          port: 22
+#          script: |
+#            cd domains/xahmedtaha.serv00.net/
+#            composer update
+#            npm update
+#            npm run build
+#            php artisan migrate
+#            cp -a public/. public_html/
