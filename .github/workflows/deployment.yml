@@ -83,7 +83,7 @@ jobs:
       - name: Executing Remote ssh commands
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: s10.serv00.com
+          host: "s10.serv00.com"
           username: xahmedtaha
           password: iM6G(pBC5&5nGQ@1pzkj
           debug: true
