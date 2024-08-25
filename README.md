@@ -25,6 +25,7 @@ The purpose of this website is a demo to show potential features and capabilitie
 - `cp .env.example .env`
 - `php artisan key:generate`
 - `php artisan migrate --seed`
+- `php artisan storage:link`
 - `php artisan serve`
 - Access the app at localhost:8000
 
