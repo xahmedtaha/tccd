@@ -17,7 +17,7 @@ The purpose of this website is a demo to show potential features and capabilitie
 - Tailwind CSS (Styling) & Vue.js (Reactivity/Components Framework) & InertiaJS (Server Routing Library)
 
 ### Setup
-- Install PHP 8.3
+- Install PHP 8.2 and Node JS
 - Clone the repository.
 - `composer install`
 - `npm install`
